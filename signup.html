@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign up for a JS Bank account using your email.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JS Bank - Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h2>Create Your Account</h2>
+  </header>
+
+  <div class="container">
+    <div class="form-container">
+      <h1>Sign Up</h1>
+      <form id="signupForm">
+        <!-- Full Name Input -->
+        <div class="input-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your full name" required>
+        </div>
+
+        <!-- Email Input -->
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Password Input -->
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a password" required>
+        </div>
+
+        <!-- Confirm Password Input -->
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+        </div>
+
+        <!-- Sign Up Button -->
+        <button class="btn" type="submit" aria-label="Sign up for an account">Sign Up</button>
+      </form>
+
+      <p class="login-link">
+        Already have an account? <a href="index.html">Log in here</a>.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 JS Bank. All rights reserved.
+  </footer>
+
+  <script src="validation.js"></script>
+</body>
+</html>

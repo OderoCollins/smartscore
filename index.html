@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login to JS Bank to manage your accounts securely and efficiently.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JS Bank - Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h2>Welcome Back</h2>
+  </header>
+
+  <div class="container">
+    <div class="form-container">
+      <h1>JS Bank</h1>
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required aria-describedby="emailError">
+          <small class="error-message hidden" id="emailError">Invalid email address</small>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required autocomplete="off" aria-describedby="passwordError">
+          <small class="error-message hidden" id="passwordError">Invalid password</small>
+        </div>
+
+        <button class="btn" aria-label="Login to your account">Login</button>
+
+        <a href="forgot-password.html" class="forgot-password" target="_blank" rel="noopener noreferrer">Forgot Password?</a>
+      </form>
+
+      <div class="signup-options">
+        <p>Don't have an account? Sign up with:</p>
+        <a href="signup.html"><button class="btn email-btn" aria-label="Sign up with Email">Email</button></a>
+        <button class="btn google-btn" aria-label="Sign up with Google" onclick="alertUnderDevelopment()">Google</button>
+        <button class="btn microsoft-btn" aria-label="Sign up with Microsoft" onclick="alertUnderDevelopment()">Microsoft</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 JS Bank. All rights reserved.
+  </footer>
+
+  <script src="validation.js"></script>
+</body>
+</html>
